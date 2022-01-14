@@ -1,0 +1,747 @@
+{
+	"info": {
+		"_postman_id": "2f5077c6-32a2-4dee-9543-fac3da07f85a",
+		"name": "challenge GET tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:46:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"Missing Argument\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:47:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"Missing Argument\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/Sean%20Connery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						"Sean%20Connery"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/Sean%20Connery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								"Sean%20Connery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:48:05 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"{\\\"Actor\\\":\\\"Sean Connery\\\",\\\"Movies\\\":[\\\"Dr. No\\\",\\\"From Russia with Love\\\",\\\"Goldfinger\\\",\\\"Thunderball\\\",\\\"You Only Live Twice\\\",\\\"Diamonds are Forever\\\",\\\"Never Say Never Again\\\"]}\"\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/Sean",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						"Sean"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/Sean",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								"Sean"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:48:40 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"{\\\"Actor\\\":\\\"Sean Connery\\\",\\\"Movies\\\":[\\\"Dr. No\\\",\\\"From Russia with Love\\\",\\\"Goldfinger\\\",\\\"Thunderball\\\",\\\"You Only Live Twice\\\",\\\"Diamonds are Forever\\\",\\\"Never Say Never Again\\\"]}\"\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/R",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						"R"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/R",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								"R"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "722"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:49:17 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"{\\\"Actor\\\":\\\"Sean Connery\\\",\\\"Movies\\\":[\\\"Dr. No\\\",\\\"From Russia with Love\\\",\\\"Goldfinger\\\",\\\"Thunderball\\\",\\\"You Only Live Twice\\\",\\\"Diamonds are Forever\\\",\\\"Never Say Never Again\\\"]}\",\n    \"{\\\"Actor\\\":\\\"George Lazenby\\\",\\\"Movies\\\":[\\\"On Her Majesty's Secret Service\\\"]}\",\n    \"{\\\"Actor\\\":\\\"Roger Moore\\\",\\\"Movies\\\":[\\\"Live and Let Die\\\",\\\"The Man with the Golden Gun\\\",\\\"The Spy Who Loved Me\\\",\\\"Moonraker\\\",\\\"For Your Eyes Only\\\",\\\"Octopussy\\\",\\\"A View to a Kill\\\"]}\",\n    \"{\\\"Actor\\\":\\\"Pierce Brosnan\\\",\\\"Movies\\\":[\\\"GoldenEye\\\",\\\"Tomorrow Never Dies\\\",\\\"The World is Not Enough\\\",\\\"Die Another Day\\\"]}\",\n    \"{\\\"Actor\\\":\\\"Daniel Craig\\\",\\\"Movies\\\":[\\\"Casino Royale\\\",\\\"Quantum of Solace\\\",\\\"Skyfall\\\",\\\"Spectre\\\",\\\"No Time to Die\\\"]}\"\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor"
+					],
+					"query": [
+						{
+							"key": "actorId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor"
+							],
+							"query": [
+								{
+									"key": "actorId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:49:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"Missing Argument\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=x",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor"
+					],
+					"query": [
+						{
+							"key": "actorId",
+							"value": "x"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=x",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor"
+							],
+							"query": [
+								{
+									"key": "actorId",
+									"value": "x"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=utf-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1010"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:50:24 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>Apache Tomcat/8.0.27 - Error report</title>\n        <style type=\"text/css\">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style>\n    </head>\n    <body>\n        <h1>HTTP Status 404 - Not Found</h1>\n        <div class=\"line\"></div>\n        <p>\n            <b>type</b> Status report\n        </p>\n        <p>\n            <b>message</b>\n            <u>Not Found</u>\n        </p>\n        <p>\n            <b>description</b>\n            <u>The requested resource is not available.</u>\n        </p>\n        <hr class=\"line\">\n        <h3>Apache Tomcat/8.0.27</h3>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor"
+					],
+					"query": [
+						{
+							"key": "actorId",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor"
+							],
+							"query": [
+								{
+									"key": "actorId",
+									"value": "-1"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:50:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"Invalid actorId -1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor"
+					],
+					"query": [
+						{
+							"key": "actorId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor"
+							],
+							"query": [
+								{
+									"key": "actorId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:51:20 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Actor\": \"Sean Connery\",\n    \"Movies\": [\n        \"Dr. No\",\n        \"From Russia with Love\",\n        \"Goldfinger\",\n        \"Thunderball\",\n        \"You Only Live Twice\",\n        \"Diamonds are Forever\",\n        \"Never Say Never Again\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor"
+					],
+					"query": [
+						{
+							"key": "actorId",
+							"value": "99"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor?actorId=99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor"
+							],
+							"query": [
+								{
+									"key": "actorId",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:51:54 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"No actors found by ID: 99\"\n}"
+				}
+			]
+		}
+	]
+}

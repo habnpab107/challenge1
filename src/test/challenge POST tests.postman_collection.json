@@ -1,0 +1,725 @@
+{
+	"info": {
+		"_postman_id": "c5f6fc9f-4431-4a0c-b4ee-91db7bee92cf",
+		"name": "challenge POST tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "string"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ActorName\":\"actor\",\"MovieName\":\"movie\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"ActorName\":\"actor\",\"MovieName\":\"movie\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:27:20 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"NewActor\": \"{\\\"Actor\\\":\\\"actor\\\"}\"\n    },\n    {\n        \"NewMovie\": \"{\\\"Movie\\\":\\\"movie\\\"}\"\n    },\n    {\n        \"NewCatalog\": \"{\\\"MovieId\\\":39,\\\"ActorId\\\":16}\"\n    }\n]"
+				},
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"ActorName\":\"actor\",\"MovieName\":\"movie\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:38:22 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"No data added\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "string"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"ActorName\":\"acto1\",\"MovieName\":\"movi1\"},{\"ActorName\":\"acto1\",\"MovieName\":\"movi2\"},{\"ActorName\":\"acto1\",\"MovieName\":\"movi3\"}]"
+				},
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\"ActorName\":\"acto1\",\"MovieName\":\"movi1\"},{\"ActorName\":\"acto1\",\"MovieName\":\"movi2\"},{\"ActorName\":\"acto1\",\"MovieName\":\"movi3\"}]"
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "296"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:39:17 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"NewActor\": \"{\\\"Actor\\\":\\\"acto1\\\"}\"\n    },\n    {\n        \"NewMovie\": \"{\\\"Movie\\\":\\\"movi1\\\"}\"\n    },\n    {\n        \"NewCatalog\": \"{\\\"MovieId\\\":40,\\\"ActorId\\\":17}\"\n    },\n    {\n        \"NewMovie\": \"{\\\"Movie\\\":\\\"movi2\\\"}\"\n    },\n    {\n        \"NewCatalog\": \"{\\\"MovieId\\\":41,\\\"ActorId\\\":17}\"\n    },\n    {\n        \"NewMovie\": \"{\\\"Movie\\\":\\\"movi3\\\"}\"\n    },\n    {\n        \"NewCatalog\": \"{\\\"MovieId\\\":42,\\\"ActorId\\\":17}\"\n    }\n]"
+				},
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\"ActorName\":\"acto1\",\"MovieName\":\"movi1\"},{\"ActorName\":\"acto1\",\"MovieName\":\"movi2\"},{\"ActorName\":\"acto1\",\"MovieName\":\"movi3\"}]"
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:39:37 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"No data added\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "string"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:40:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"Missing Argument\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "string"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "abc"
+				},
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "abc"
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:41:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"Invalid input: abc\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "string"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ActorName\":\"acto1\",\"Name\":\"movi1\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"ActorName\":\"acto1\",\"Name\":\"movi1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:42:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"MovieName element required\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8084/challenge1/webresources/actor/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "string"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Actor\":\"acto1\",\"MovieName\":\"movi1\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8084/challenge1/webresources/actor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"challenge1",
+						"webresources",
+						"actor",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8084/challenge1/webresources/actor/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "string"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Actor\":\"acto1\",\"MovieName\":\"movi1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8084/challenge1/webresources/actor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"challenge1",
+								"webresources",
+								"actor",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Dec 2021 16:43:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Error\": \"ActorName element required\"\n}"
+				}
+			]
+		}
+	]
+}
